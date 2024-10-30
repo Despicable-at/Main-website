@@ -1,0 +1,141 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.form-wrapper {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto; /* Center the form */
+    z-index: 2; /* Ensure form is above stripes */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.logo {
+    width: 40px; /* Adjust size as necessary */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #357AE8;
+}
+
+.google-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #db4437;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.google-button:hover {
+    background-color: #c13525;
+}
+
+.google-logo {
+    width: 20px; /* Adjust size as necessary */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.animation {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+input[type="password"]:focus + .animation,
+input[type="password"]:not(:placeholder-shown) + .animation {
+    opacity: 1;
+}
+
+/* Background styles */
+body {
+    background: linear-gradient(to right, #ffd401 50%, white 50%);
+    position: relative;
+}
+
+.stripes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Cover only the yellow section */
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem; /* Adjust size for stripe */
+    z-index: 1; /* Position behind the content */
+}
+
+/* Ensure content is above the stripes */
+.container {
+    position: relative;
+    z-index: 2;
+}
+.google-icon {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px; /* Spacing between the icon and text */
+    color: #a5e80a; /* Google red color */
+}
+

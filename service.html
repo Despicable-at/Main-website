@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PFCA</title>
+    <!-- ICO logo -->
+    <link rel="icon" href="PFC-logo-black-and-yellow(1).ico">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .pricing-section {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+
+    .pricing-box {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .pricing-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing-box .img-box1 {
+      position: relative;
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+      overflow: hidden;
+    }
+
+    .pricing-box .img-box1 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Crop image if necessary */
+    }
+
+    .pricing-box h5 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .pricing-box p {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .pricing-box .price {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .pricing-box a {
+      background: #ffcc00;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .pricing-box a:hover {
+      background: #e6b800;
+    }
+/* Make sure the section is responsive */
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .col-md-6.col-lg-3 {
+    flex: 0 0 100%; /* Make each column take full width on mobile */
+    max-width: 100%; /* Ensure columns do not exceed full width */
+    margin-bottom: 20px; /* Add space between items */
+    text-align: center; /* Center text inside columns */
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the box */
+    padding: 15px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add border for better visibility */
+    border-radius: 8px; /* Round corners for a sleek look */
+    background-color: #fff; /* Ensure background color for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    overflow: hidden; /* Hide overflow to handle images */
+  }
+
+  .img-box {
+    width: 100%; /* Ensure the image box takes full width */
+    height: 200px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow to avoid stretching */
+    position: relative; /* Relative positioning for absolute positioning of images */
+  }
+
+  .img-box img {
+    position: absolute; /* Absolute positioning for full coverage */
+    top: 20%; /* Center image vertically */
+    left: 14%; /* Further shift the image to the left */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 150%; /* Ensure the image covers slightly more than the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the box without distortion */
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animation {
+  background: linear-gradient(45deg, #d4d0d0, #f2eaed, #8d781f, #74f419);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 10px; /* Add padding to ensure content is not cut off by the gradient border */
+  border-radius: 10px; /* Optional: add rounded corners to the gradient box */
+}
+
+.gradient-animation .box {
+  background: rgba(255, 255, 255, 0.9); /* Ensure the inner box content is readable */
+  border-radius: 10px; /* Match the border-radius of the gradient container */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.gradient-animation .img-box img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="active" href="service.html">
+              Services
+            </a>
+            <a class="" href="testimonial.html">
+              Testimonial
+            </a>
+            <a class="" href="news.html">
+              Latest News
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            PFCA
+          </span>
+        </a>
+        <div class="user_option">
+          
+        </div>
+        <div class="name_style">
+          <h6>
+            P
+            F
+            C
+            A
+            F
+            R
+            I
+            C
+            A
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+
+
+    <!-- Pricing Section -->
+    <div class="container">
+      <div class="heading_container">
+        <h2>Pricing</h2>
+      </div>
+    </div>
+    <section class="pricing-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="pricing-box">
+              <div class="img-box1">
+                <img src="images/client-bg.jpg" alt="Social Marketing">
+              </div>
+              <h5>Social Marketing</h5>
+              <p>Social Media Management<br>Social Media Advertising<br>Influencer Marketing<br>Social Media Analytics<br>Community Building</p>
+              <div class="price">GHS 99/month</div>
+              <a href="checkout.html?service=Social%20Marketing">Get Started</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="pricing-box">
+              <div class="img-box1">
+                <img src="images/client-bg.jpg" alt="Web Development">
+              </div>
+              <h5>Web Development</h5>
+              <p>Web design<br>CMS<br>E-commerce<br>Web Application<br>Hosting and Domain</p>
+              <div class="price">GHS 199/month</div>
+              <a href="checkout.html?service=Web%20Development">Get Started</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="pricing-box">
+              <div class="img-box1">
+                <img src="images/client-bg.jpg" alt="Data Management">
+              </div>
+              <h5>Data Management</h5>
+              <p>Data Strategy and Consult<br>Data Integration<br>Data Quality Management<br>Cloud Data Management<br>Data Migration</p>
+              <div class="price">GHS 149/month</div>
+              <a href="checkout.html?service=Data%20Management">Get Started</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="pricing-box">
+              <div class="img-box1">
+                <img src="images/client-bg.jpg" alt="Digital Marketing">
+              </div>
+              <h5>Digital Marketing</h5>
+              <p>Pay-Per-Click (PPC)<br>Content Marketing<br>Social Media Marketing<br>Email Marketing<br>Influencer Marketing</p>
+              <div class="price">GHS 129/month</div>
+              <a href="checkout.html?service=Digital%20Marketing">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/search/?api=1&query=KNUST,Ghana" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              
+              <div id="contact-options" class="contact-options">
+                <div class="contact-option">
+                  <a href="https://wa.me/233507943755">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+                <div class="contact-option">
+                  <a href="tel:+233507943755">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Call Us</span>
+                  </a>
+                </div>
+              </div>
+              
+              <script>
+                function showContactOptions(event) {
+                  event.preventDefault(); // Prevent the default link behavior
+                  var contactOptions = document.getElementById('contact-options');
+                  contactOptions.style.display = 'block';
+                  contactOptions.style.position = 'absolute';
+                  contactOptions.style.left = event.pageX + 'px';
+                  contactOptions.style.top = event.pageY + 'px';
+                };
+              </script>
+              
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Send a mail
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://youtube.com/@PFCAfrica/">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/PFCAfrica_/">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/projects-for-change-ghana/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/pfc_africa/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="active" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Services
+              </a>
+              <a class="" href="testimonial.html">
+                <img src="images/nav-bullet.png" alt="">
+                Testimonial
+              </a>
+              <a class="" href="news.html">
+                <img src="images/nav-bullet.png" alt="">
+                Latest News
+              </a>
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              This is the Official website of Projects For Change Africa.
+              Our Platform is designed to provide you with all the 
+              information,
+               tools, and resources you need to take your 
+               business to the next level.
+               Thanks for visiting, and we look 
+               forward to working with you on your 
+               journey to success.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Subscribe</h4>
+          <form id="subscribeForm" action="https://formspree.io/f/mrbzbjer" method="POST">
+              <input type="email" name="email" placeholder="Enter email" required />
+              <button type="submit">Subscribe</button>
+          </form>
+          <div id="subscribeResponse"></div>
+          <script>
+            document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+                
+                const form = event.target;
+                const formData = new FormData(form);
+        
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        document.getElementById('subscribeResponse').innerText = 'Subscribed successfully!';
+                        form.reset(); // Reset the form after successful submission
+                    } else {
+                        document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                });
+            });
+        </script>
+        
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            <h11>
+            &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+            <a href="https://html.design/">PFCAFRICA</a>
+            </h11></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PFCA</title>
+    <!-- ICO logo -->
+    <link rel="icon" href="PFC-logo-black-and-yellow(1).ico">
+
+    <style>
+      #moreContent {
+          display: none;
+          transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+          overflow: hidden;
+      }
+
+      #moreContent.show {
+          display: block;
+          max-height: 1000px; /* Adjust as needed */
+          opacity: 1;
+      }
+  </style>
+  <style>
+    .temporary-message {
+      position: absolute;
+      background-color: #ffcc00;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #000;
+      font-size: 14px;
+      display: none;
+      z-index: 1000;
+      white-space: nowrap;
+      max-width: 200px;
+      word-wrap: break-word;
+    }
+
+    .user_option {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="index.html">
+              Home
+            </a>
+            <a class="active" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="testimonial.html">
+              Testimonial
+            </a>
+            <a class="" href="news.html">
+              Latest News
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            PFCA
+          </span>
+        </a>
+        <div class="user_option">
+          
+        </div>
+        <div id="messageBox" class="temporary-message"></div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const searchButton = document.getElementById('searchButton');
+            const userIcon = document.getElementById('userIcon');
+            const messageBox = document.getElementById('messageBox');
+      
+            function showMessage(element) {
+              messageBox.innerText = 'Feature not available';
+              const rect = element.getBoundingClientRect();
+              const parentRect = element.parentElement.getBoundingClientRect();
+              messageBox.style.top = (rect.bottom - parentRect.top) + 5 + 'px';
+              messageBox.style.left = (rect.left + (rect.width / 2) - parentRect.left) + 'px';
+              messageBox.style.display = 'block';
+      
+              // Ensure the message box does not overflow the screen
+              const messageRect = messageBox.getBoundingClientRect();
+              if (messageRect.right > window.innerWidth) {
+                messageBox.style.left = 'auto';
+                messageBox.style.right = '0';
+              }
+      
+              setTimeout(function () {
+                messageBox.style.display = 'none';
+              }, 4000);
+            }
+      
+            searchButton.addEventListener('click', function (event) {
+              event.preventDefault();
+              showMessage(searchButton);
+            });
+      
+            userIcon.addEventListener('click', function (event) {
+              event.preventDefault();
+              showMessage(userIcon);
+            });
+          });
+        </script>
+
+        <div class="name_style">
+          <h6>
+            P
+            F
+            C
+            A
+            F
+            R
+            I
+            C
+            A
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>GET TO KNOW US</h2>
+                    </div>
+                    <div>
+                        <h3>Mission Statement:</h3>
+                        <p>
+                            At <b>PFC Africa</b>, our mission is to catalyze digital transformation 
+                            across Africa by providing innovative solutions that empower businesses 
+                            to thrive in the digital age. We are committed to delivering excellence 
+                            through diligent project execution, cutting-edge technology, and unwavering 
+                            dedication to our clients' success. Our goal is to be the leading force driving 
+                            Africa's economic growth and technological advancement, one project at a time.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Vision Statement:</h3>
+                        <p>
+                            Our vision at <b>PFC Africa</b> is to shape the future of Africa's digital landscape, 
+                            driving sustainable growth, and fostering innovation. We aspire to be the go-to 
+                            partner for businesses seeking to leverage technology for success, recognized for 
+                            our integrity, expertise, and unwavering commitment to excellence. By harnessing 
+                            the power of technology, we envision a prosperous Africa, where businesses thrive
+                            and communities prosper.
+                        </p>
+                    </div>
+                    <div id="moreContent" style="display: none;">
+                        <p>
+                            We are a dynamic team of innovative thinkers and problem solvers dedicated to 
+                            driving digital transformation across Africa. With a passion for excellence and a 
+                            commitment to client success, we deliver cutting-edge solutions in web development, 
+                            digital marketing, and data management. Our mission is to empower businesses to 
+                            thrive in the digital age, leveraging technology to unlock growth and create lasting 
+                            impact. Our diverse clientele spans industries and regions, each trusting us to deliver 
+                            tailored solutions. From concept to completion, our portfolio boasts a spectrum of 
+                            successful projects, each a testament to our expertise.
+                        </p>
+
+                        <p>
+                          As our motto says,<b> Constructum Partum Administrare</b>, meaning Build
+                          Create Manage, our aim is to help raise up african business to compete
+                          on the International Markets, giving them a more real and proactive business
+                          front.
+                      </p>
+                    </div>
+                    <a href="#" id="readMoreButton">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <div class="stripe_design sd1"></div>
+                    <div class="stripe_design sd2"></div>
+                    <div class="stripe_design sd3"></div>
+                    <div class="stripe_design sd4"></div>
+                    <div class="stripe_design sd5"></div>
+                    <div class="stripe_design sd6"></div>
+                    <img src="images/2.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('readMoreButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const moreContent = document.getElementById('moreContent');
+            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                moreContent.style.display = 'block';
+                this.textContent = 'Read Less'; // Change button text to "Read Less"
+            } else {
+                moreContent.style.display = 'none';
+                this.textContent = 'Read More'; // Change button text back to "Read More"
+            }
+        });
+    });
+</script>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/search/?api=1&query=KNUST,Ghana" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              
+              <div id="contact-options" class="contact-options">
+                <div class="contact-option">
+                  <a href="https://wa.me/233507943755">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+                <div class="contact-option">
+                  <a href="tel:+233507943755">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Call +233 50 794 3755</span>
+                  </a>
+                </div>
+              </div>
+              
+              <script>
+                function showContactOptions(event) {
+                  event.preventDefault(); // Prevent the default link behavior
+                  var contactOptions = document.getElementById('contact-options');
+                  contactOptions.style.display = 'block';
+                  contactOptions.style.position = 'absolute';
+                  contactOptions.style.left = event.pageX + 'px';
+                  contactOptions.style.top = event.pageY + 'px';
+                };
+              </script>
+              
+              </a>
+              <a href="mailto:forchangeprojects@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Send a mail
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://youtube.com/@PFCAfrica/">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/PFCAfrica_/">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/projects-for-change-ghana/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/pfc_africa/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="active" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Services
+              </a>
+              <a class="" href="testimonial.html">
+                <img src="images/nav-bullet.png" alt="">
+                Testimonial
+              </a>
+              <a class="" href="news.html">
+                <img src="images/nav-bullet.png" alt="">
+                Latest News
+              </a>
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              This is the Official website of Projects For Change Africa.
+              Our Platform is designed to provide you with all the 
+              information,
+               tools, and resources you need to take your 
+               business to the next level.
+               Thanks for visiting, and we look 
+               forward to working with you on your 
+               journey to success.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Subscribe</h4>
+          <form id="subscribeForm" action="https://formspree.io/f/mrbzbjer" method="POST">
+              <input type="email" name="email" placeholder="Enter email" required />
+              <button type="submit">Subscribe</button>
+          </form>
+          <div id="subscribeResponse"></div>
+          <script>
+            document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+                
+                const form = event.target;
+                const formData = new FormData(form);
+        
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        document.getElementById('subscribeResponse').innerText = 'Subscribed successfully!';
+                        form.reset(); // Reset the form after successful submission
+                    } else {
+                        document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                });
+            });
+        </script>
+        
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            <h11>
+            &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+            <a href="https://html.design/">PFCAFRICA</a>
+            </h11></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PFCA</title>
+    <!-- ICO logo -->
+    <link rel="icon" href="PFC-logo-black-and-yellow(1).ico">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  
+  <!-- Telephone codes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Include Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+     /* Make sure the section is responsive */
+@media (max-width: 768px) {
+  .row1 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+.col-md-6 .col-lg-3 {
+    flex: 0 0 100%; /* Make each column take full width on mobile */
+    max-width: 100%; /* Ensure columns do not exceed full width */
+    margin-bottom: 20px; /* Add space between items */
+    text-align: center; /* Center text inside columns */
+  }
+
+  .unique-box {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the box */
+    padding: 15px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add border for better visibility */
+    border-radius: 8px; /* Round corners for a sleek look */
+    background-color: #fff; /* Ensure background color for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    overflow: hidden; /* Hide overflow to handle images */
+  }
+
+  .special .img-box {
+    width: 100%; /* Ensure the image box takes full width */
+    height: 200px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow to avoid stretching */
+    position: relative; /* Relative positioning for absolute positioning of images */
+  }
+
+  .special .img-box img {
+    position: absolute; /* Absolute positioning for full coverage */
+    top: 20%; /* Center image vertically */
+    left: 14%; /* Further shift the image to the left */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 150%; /* Ensure the image covers slightly more than the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the box without distortion */
+  }
+}
+
+/* Ensure .row1 displays items in a row */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Optional: space between items */
+  margin: 0 -0.5rem; /* Adjust margin to counteract the gap */
+}
+
+
+
+
+  </style>
+  <style>
+    
+
+/* Basic styling for the pricing section */
+.pricing-section {
+  padding: 60px 0;
+  background: #000000;
+}
+
+.pricing-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .pricing-col {
+    display: inline-block;
+    min-width: 40%;
+    max-width: 280px;
+    margin-right: 15px;
+  }
+
+.pricing-container {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    gap: 0; /* Remove gaps between items */
+    overflow-x: auto; /* Enable horizontal scroll */
+
+  }
+
+/* Pricing box styling */
+.pricing-box {
+    background: #ffffff;
+    border-radius: 15px;
+    display: inline-block;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn’t affect layout */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+.pricing-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-box a {
+  display: inline-block;
+  background-color: #ffd401;
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.pricing-box a:hover {
+  background-color: #000000;
+
+}
+
+/* Image container for pricing boxes */
+.pricing-img-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.pricing-img-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Horizontal scroll for mobile */
+@media (max-width: 768px) {
+  .pricing-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    white-space: nowrap;
+    gap: 0; /* Remove gaps between items */
+  }
+
+  .pricing-box {
+    display: inline-block;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn’t affect layout */
+  }
+
+  .pricing-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .pricing-col {
+    display: inline-block;
+    min-width: 40%;
+    max-width: 280px;
+    margin-right: 15px;
+  }
+}
+
+
+    .service-info {
+      margin-bottom: 20px;
+    }
+    .form_container form div {
+      margin-bottom: 15px;
+    }
+    .form_container form div.phone-number-container {
+      margin-bottom: 30px; /* Increased margin for separation */
+    }
+    .form_container form div.message-box-container {
+      margin-bottom: 0; /* Remove bottom margin if needed */
+    }
+    .message-box {
+      height: 100px;
+    }
+
+
+    @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animation {
+  background: linear-gradient(45deg, #d4d0d0, #f2eaed, #e7e5de, #74f419);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 10px; /* Add padding to ensure content is not cut off by the gradient border */
+  border-radius: 10px; /* Optional: add rounded corners to the gradient box */
+}
+
+.gradient-animation .box {
+  background: rgba(255, 255, 255, 0.9); /* Ensure the inner box content is readable */
+  border-radius: 10px; /* Match the border-radius of the gradient container */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.gradient-animation .img-box img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+</style>
+</head>
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="active" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="testimonial.html">
+              Testimonial
+            </a>
+            <a class="" href="news.html">
+              Latest News
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            PFCA
+          </span>
+        </a>
+         <!--<div class="user_option">
+          <form class="form-inline">
+            <button class="btn  nav_search-btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <a href="">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div> -->
+        <div class="name_style">
+          <h6>
+            P
+            F
+            C
+            A
+            F
+            R
+            I
+            C
+            A
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section position-relative">
+      <div class="box">
+        <div class="detail-box">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              PFCA
+            </span>
+          </a>
+          <div class="carousel slide slider_text_carousel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="heading_box">
+                  <h1>
+                      Grow Businesses
+                    </span>
+                  </h1>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="heading_box">
+                  <h1>
+                    <span>
+                      We
+                    </span>
+                    <span>
+                      Build
+                    </span>
+                  </h1>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="heading_box">
+                  <h1>
+                    <span>
+                      We
+                    </span>
+                    <span>
+                      Manage
+                    </span>
+                  </h1>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="heading_box">
+                  <h1>
+                    <span>
+                      We
+                    </span>
+                    <span>
+                      Are
+                    </span>
+                    <span>
+                      PFCAfrica
+                    </span>
+                  </h1>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <div class="btn-box">
+            <a href="contact.html" class="btn-1">
+              Contact Us
+            </a>
+            <a href="about.html" class="btn-2">
+              Read More
+            </a>
+          </div>
+        </div>
+    
+        <div class="img-box">
+          <div id="carouselExample" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pfc mug.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/PFC logo black and yellow copy.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/PFC logo yellow and black(1).jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- feature section -->
+
+  <section class="feature_section ">
+    
+    <div class="container-fluid service_container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+            <div class="number_box">
+              <h5>
+                01
+              </h5>
+            </div>
+            <h4>
+              Research
+            </h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+            <div class="number_box">
+              <h5>
+                02
+              </h5>
+            </div>
+            <h4>
+              Create
+            </h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+            <div class="number_box">
+              <h5>
+                03
+              </h5>
+            </div>
+            <h4>
+              Build
+            </h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+            <div class="number_box">
+              <h5>
+                04
+              </h5>
+            </div>
+            <h4>
+              Manage
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end feature section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                WHO ARE WE?
+              </h2>
+            </div>
+            <p>
+              We are a dynamic team of innovative thinkers and problem solvers dedicated 
+              to driving digital transformation across Africa. With a passion for excellence 
+              and a commitment to client success, we deliver cutting-edge solutions in web development, 
+              digital marketing, and data management.
+            </p>
+            <a href="about.html">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <div class="stripe_design sd1"></div>
+            <div class="stripe_design sd2"></div>
+            <div class="stripe_design sd3"></div>
+            <div class="stripe_design sd4"></div>
+            <div class="stripe_design sd5"></div>
+            <div class="stripe_design sd6"></div>
+            <img src="images/ad 2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- help section -->
+  <section class="help_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Let Us Help <br>
+                You Get More
+              </h2>
+            </div>
+            <p>
+              At PFC Africa, we're dedicated to helping you 
+              achieve more with your business. Whether 
+              you're looking to increase your customer 
+              base, boost your online presence, or 
+              enhance your operational efficiency, we 
+              have the tools and expertise to make it 
+              happen. Here's how we can assist you:
+            </p>
+            <a href="https://youtu.be/cGLeAeiQyW4">
+              See Videos
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/1.jpg" alt="" />
+            <div class="play_btn">
+              <a href="https://youtu.be/cGLeAeiQyW4">
+              <button>
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end help section -->
+
+
+  <!-- we do section -->
+
+  <section class="pricing-section">
+    <div class="pricing-container">
+      <div class="pricing-row">
+        <div class="pricing-col">
+          <div class="pricing-box">
+            <div class="pricing-img-box">
+              <img src="images/client-bg.jpg" alt="Social Marketing">
+            </div>
+            <h5><b>Social Marketing</b></h5>
+            <p>Social Media Management<br>Social Media Advertising<br>Influencer Marketing<br>Social Media Analytics<br>Community Building</p>
+            <a href="checkout.html?service=Social%20Marketing">Get Started</a>
+
+          </div>
+        </div>
+        <div class="pricing-col">
+          <div class="pricing-box">
+            <div class="pricing-img-box">
+              <img src="images/client-bg.jpg" alt="Web Development">
+            </div>
+            <h5><b>Web Development</b></h5>
+            <p>Web design<br>CMS<br>E-commerce<br>Web Application<br>Hosting and Domain</p>
+            <a href="checkout.html?service=Web%20Development">Get Started</a>
+          </div>
+        </div>
+        <div class="pricing-col">
+          <div class="pricing-box">
+            <div class="pricing-img-box">
+              <img src="images/client-bg.jpg" alt="Data Management">
+            </div>
+            <h5><b>Data Management</b></h5>
+            <p>Data Strategy and Consult<br>Data Integration<br>Data Quality Management<br>Cloud Data Management<br>Data Migration</p>
+            <a href="checkout.html?service=Data%20Management">Get Started</a>
+          </div>
+        </div>
+        <div class="pricing-col">
+          <div class="pricing-box">
+            <div class="pricing-img-box">
+              <img src="images/client-bg.jpg" alt="Digital Marketing">
+            </div>
+            <h5><b>Digital Marketing</b></h5>
+            <p>Pay-Per-Click (PPC)<br>Content Marketing<br>Social Media Marketing<br>Email Marketing<br>Influencer Marketing</p>
+            <a href="checkout.html?service=Digital%20Marketing">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- end we do section -->
+
+
+
+
+  <!-- news section -->
+
+  <section class="news_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Latest News
+        </h2>
+        <p>
+          Explore our latest updates to stay informed about industry trends, company news, 
+          and exciting developments. 
+          Dive into insightful articles, important announcements, 
+          and more to keep your finger on the pulse of what's happening at PFCAfrica
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="detail_container">
+            <div class="detail-box">
+              <h4>
+                Adjusting Pricing To Suit Economy
+              </h4>
+              <div class="news_social">
+                <a href="#" id="likeButton">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <span>Likes</span>
+                </a>
+                <a href="#" id="shareButton">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <span>Share</span>
+                </a>
+            </div>            
+              <p>
+                Amidst the recent surge in living expenses across Ghana, We, 
+                at PFCA have swiftly adapted by reevaluating pricing strategies 
+                to alleviate financial burdens for businesses. Recognizing the economic 
+                challenges faced by entrepreneurs, We are now offering more competitive 
+                pricing options and tailored packages to enhance accessibility without 
+                compromising quality. These efforts not only aim to support local 
+                businesses in establishing and expanding their online presence but 
+                also underscore a commitment to fostering growth and innovation within 
+                Ghana's digital economy. By making web development services more affordable 
+                and adaptable, PFCA play a crucial role in empowering businesses to thrive 
+                amidst the evolving economic landscape of the country.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="news.html">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="img-box">
+            <img src="images/ppic.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", async function() {
+        const likeButton = document.getElementById("likeButton");
+        const articleId = "unique-article-id"; // Replace with a unique ID for each article
+        const apiUrl = `http://localhost:5000/api/likes/${articleId}`;
+    
+        // Function to check if the article has been liked
+        function hasLiked() {
+          return localStorage.getItem(`liked_${articleId}`) === "true";
+        }
+    
+        // Update like button text based on like status
+        function updateLikeButtonText(count) {
+          likeButton.querySelector("span").textContent = `Like (${count})`;
+          if (hasLiked()) {
+            likeButton.classList.add("liked"); // Optional: Add a class to style liked button
+          }
+        }
+    
+        // Fetch initial like count
+        async function fetchLikeCount() {
+          try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            updateLikeButtonText(data.likeCount);
+          } catch (error) {
+            console.error("Error fetching like count:", error);
+          }
+        }
+    
+        // Increment like count on button click, only if not already liked
+        likeButton.addEventListener("click", async function(event) {
+          event.preventDefault();
+          if (hasLiked()) {
+            alert("You've already liked this article.");
+            return;
+          }
+    
+          try {
+            const response = await fetch(apiUrl, { method: "POST" });
+            const data = await response.json();
+            
+            // Update like count and set like status in localStorage
+            updateLikeButtonText(data.likeCount);
+            localStorage.setItem(`liked_${articleId}`, "true");
+          } catch (error) {
+            console.error("Error updating like count:", error);
+          }
+        });
+    
+        fetchLikeCount(); // Initial load
+      });
+    </script>
+    
+  </section>
+
+  <!-- end news section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          What Says Our Clients
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/evolve.png" alt="">
+                </div>
+                <div class="client_detail">
+                  <h5>
+                    Evolve Empire Ghana
+                  </h5>
+                  <h6>
+                    Non Profitable Organization
+                  </h6>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  We partnered with PFCA to 
+                  enhance and drive more 
+                  traffic to our website. Their innovative 
+                  marketing strategies and comprehensive support 
+                  exceeded our expectations. Thanks to their 
+                  expertise, we've seen a significant increase 
+                  in our website traffic.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-img2.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <h5>
+                    Thomas mor
+                  </h5>
+                  <h6>
+                    Hidden
+                  </h6>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  PFC Africa has been instrumental 
+                  in transforming our business operations 
+                  and boosting our online visibility. Their 
+                  team is professional, responsive, and truly 
+                  understands our needs. Since partnering with 
+                  them, we've experienced a remarkable increase 
+                  in both traffic and sales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+                <div class="form_container">
+                    <div class="heading_container">
+                        <h2>Contact Now For Work</h2>
+                    </div>
+                    <form id="contactForm" action="https://formspree.io/f/mrbzbjer" method="POST">
+                      <div>
+                        <input type="text" name="fullName" placeholder="Full Name" required />
+                      </div>
+                      <div>
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                      </div>
+                      <div>
+                        <input type="tel" id="phoneNumber" placeholder="Phone number" required />
+                      </div>
+                      <div>
+                        <input type="text" name="message" class="message-box" placeholder="Message" required />
+                      </div>
+                      <div class="d-flex">
+                        <button type="submit">SEND</button>
+                      </div>
+                      <div id="responseMessage"></div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var input = document.querySelector("#phoneNumber");
+  window.intlTelInput(input, {
+    initialCountry: "gh", // Set initial country to Ghana
+    geoIpLookup: function(callback) {
+      fetch('https://ipinfo.io?token=<YOUR_TOKEN>')
+        .then(response => response.json())
+        .then(data => callback(data.country))
+        .catch(() => callback('gh'));
+    },
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+  });
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
+
+  const form = event.target;
+  const formData = new FormData(form);
+  const phoneNumber = document.querySelector("#phoneNumber").value;
+  const email = document.querySelector("#email").value;
+
+  // Get the formatted number
+  const intlTelInputInstance = window.intlTelInputGlobals.getInstance(document.querySelector("#phoneNumber"));
+  const formattedNumber = intlTelInputInstance.getNumber(); // Includes country code
+
+  // Phone number validation
+  if (!intlTelInputInstance.isValidNumber()) {
+    document.getElementById('responseMessage').innerText = 'Invalid phone number.';
+    return;
+  }
+
+  // Email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    document.getElementById('responseMessage').innerText = 'Invalid email address.';
+    return;
+  }
+
+  // If validation passes, proceed with form submission
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      form.reset();
+      document.getElementById('responseMessage').innerText = 'Sent successfully!';
+    } else {
+      response.json().then(data => {
+        if (data.errors) {
+          document.getElementById('responseMessage').innerText = data.errors.map(error => error.message).join(", ");
+        } else {
+          document.getElementById('responseMessage').innerText = 'Failed to send. Please try again.';
+        }
+      }).catch(() => {
+        document.getElementById('responseMessage').innerText = 'An error occurred. Please try again.';
+      });
+    }
+  }).catch(() => {
+    document.getElementById('responseMessage').innerText = 'Failed to send. Please try again.';
+  });
+});
+
+</script>
+  
+        <div class="col-md-6  px-0">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/search/?api=1&query=KNUST,Ghana" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              
+              <div id="contact-options" class="contact-options">
+                <div class="contact-option">
+                  <a href="https://wa.me/233507943755">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+                <div class="contact-option">
+                  <a href="tel:+233507943755">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Call Us</span>
+                  </a>
+                </div>
+              </div>
+              
+              <script>
+                function showContactOptions(event) {
+                  event.preventDefault(); // Prevent the default link behavior
+                  var contactOptions = document.getElementById('contact-options');
+                  contactOptions.style.display = 'block';
+                  contactOptions.style.position = 'absolute';
+                  contactOptions.style.left = event.pageX + 'px';
+                  contactOptions.style.top = event.pageY + 'px';
+                };
+              </script>
+              
+              </a>
+              <a href="mailto:forchangeprojects@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Send a mail
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://youtube.com/@PFCAfrica/">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/PFCAfrica_/">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/projects-for-change-ghana/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/pfc_africa/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Services
+              </a>
+              <a class="" href="testimonial.html">
+                <img src="images/nav-bullet.png" alt="">
+                Testimonial
+              </a>
+              <a class="" href="news.html">
+                <img src="images/nav-bullet.png" alt="">
+                Latest News
+              </a>
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              This is the Official website of Projects For Change Africa.
+              Our Platform is designed to provide you with all the 
+              information,
+               tools, and resources you need to take your 
+               business to the next level.
+               Thanks for visiting, and we look 
+               forward to working with you on your 
+               journey to success.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Subscribe</h4>
+          <form id="subscribeForm" action="https://formspree.io/f/mrbzbjer" method="POST">
+              <input type="email" name="email" placeholder="Enter email" required />
+              <button type="submit">Subscribe</button>
+          </form>
+          <div id="subscribeResponse"></div>
+          <script>
+            document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+                
+                const form = event.target;
+                const formData = new FormData(form);
+        
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        document.getElementById('subscribeResponse').innerText = 'Subscribed successfully!';
+                        form.reset(); // Reset the form after successful submission
+                    } else {
+                        document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('subscribeResponse').innerText = 'Failed to subscribe. Please try again.';
+                });
+            });
+        </script>
+        
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var year = new Date().getFullYear();
+      document.getElementById('displayYear').textContent = year;
+    });
+  </script>
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+            <a href="https://html.design/">PFCAFRICA</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>

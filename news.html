@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PFCA</title>
+    <!-- ICO logo -->
+    <link rel="icon" href="PFC-logo-black-and-yellow(1).ico">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="testimonial.html">
+              Testimonial
+            </a>
+            <a class="active" href="news.html">
+              Latest News
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            PFCA
+          </span>
+        </a>
+        <div class="user_option">
+          
+        </div>
+        <div class="name_style">
+          <h6>
+            P
+            F
+            C
+            A
+            F
+            R
+            I
+            C
+            A
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- news section -->
+
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Latest News
+        </h2>
+        <p>
+          Welcome to the Latest News section of PFCAfrica. 
+          Here, you'll find the most up-to-date information on our 
+          latest innovations, partnerships, events, and achievements. 
+          Stay informed about our new product launches, industry 
+          insights, and company milestones. Our commitment to 
+          excellence and innovation drives us to continuously improve 
+          and bring you the best. 
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 ">
+          <div class="detail_container">
+            <div class="detail-box">
+              <h4>
+                Adjusting Pricing To Suit Economy
+              </h4>
+              <div class="news_social">
+                <a href="#" id="likeButton">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <span>Like</span>
+                </a>
+                <a href="#" id="shareButton">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <span>Share</span>
+                </a>
+            </div>
+              <p>
+                In recent months, the cost of living in Ghana has seen a noticeable increase, 
+                affecting businesses and consumers alike. As a result, many industries, including 
+                web development services, have been prompted to reevaluate their pricing structures
+                 to accommodate these economic shifts.<br>
+
+                <br>For businesses seeking to establish or enhance their online presence, web development 
+                services are indispensable. 
+                However, the traditionally high costs associated with these services can pose challenges, 
+                particularly in light of current economic pressures. Recognizing the need to support local 
+                businesses and entrepreneurs during these times, PFCAfrica is stepping 
+                up to offer more competitive pricing options.<br>
+
+                <br>By revising pricing models and exploring cost-effective solutions, web developers at PFCAfrica aim to make 
+                their services more accessible without compromising quality. This adjustment is not only a response 
+                to economic realities but also a strategic effort to foster growth and innovation within the digital 
+                landscape of Ghana.<br>
+
+                <br>Moreover, beyond simply reducing costs, these initiatives often include tailored packages that cater 
+                to varying business needs. Whether it's creating responsive websites, integrating e-commerce functionalities, 
+                or optimizing for search engines, these services remain pivotal in helping businesses thrive in an increasingly 
+                digital world.<br>
+
+                <br>As businesses navigate the challenges posed by the rising cost of living, the commitment of web development 
+                services to affordability and excellence stands as a testament to their dedication to supporting Ghana's 
+                entrepreneurial spirit. By offering competitive pricing and adaptable solutions, PFCAfrica continues to 
+                empower local businesses to harness the full potential of their online presence, driving growth and sustainability 
+                in Ghana's evolving economic landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="img-box">
+            <img src="images/owusu.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("shareButton").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: 'Adjusting Pricing To Suit Economy',
+            text: 'Check out this article on PFCAfrica!',
+            url: window.location.href // Share the current page URL
+          })
+          .then(() => console.log('Successfully shared'))
+          .catch((error) => console.error('Error sharing', error));
+        } else {
+          alert('Sharing is not supported on this browser.');
+        }
+      });
+    </script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", async function() {
+        const likeButton = document.getElementById("likeButton");
+        const articleId = "unique-article-id"; // Replace with a unique ID for each article
+        const apiUrl = `http://localhost:5000/api/likes/${articleId}`;
+    
+        // Fetch initial like count
+        async function fetchLikeCount() {
+          try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            likeButton.querySelector("span").textContent = `Like (${data.likeCount})`;
+          } catch (error) {
+            console.error("Error fetching like count:", error);
+          }
+        }
+    
+        // Increment like count on button click
+        likeButton.addEventListener("click", async function(event) {
+          event.preventDefault();
+          try {
+            const response = await fetch(apiUrl, { method: "POST" });
+            const data = await response.json();
+            likeButton.querySelector("span").textContent = `Like (${data.likeCount})`;
+          } catch (error) {
+            console.error("Error updating like count:", error);
+          }
+        });
+    
+        fetchLikeCount(); // Initial load
+      });
+    </script>
+  </section>
+
+  <!-- end news section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/search/?api=1&query=KNUST,Ghana" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              
+
+              <div id="contact-options" class="contact-options">
+                <div class="contact-option">
+                  <a href="https://wa.me/233507943755">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+                
+                <div class="contact-option">
+                  <a href="tel:+233507943755">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Call Us</span>
+                  </a>
+                </div>
+              </div>
+              
+              <script>
+                function showContactOptions(event) {
+                  event.preventDefault(); // Prevent the default link behavior
+                  var contactOptions = document.getElementById('contact-options');
+                  contactOptions.style.display = 'block';
+                  contactOptions.style.position = 'absolute';
+                  contactOptions.style.left = event.pageX + 'px';
+                  contactOptions.style.top = event.pageY + 'px';
+                };
+              </script>
+              
+              </a>
+              <a href="mailto:forchangeprojects@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Send a mail
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://youtube.com/@PFCAfrica/">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/PFCAfrica_/">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/projects-for-change-ghana/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/pfc_africa/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Services
+              </a>
+              <a class="" href="testimonial.html">
+                <img src="images/nav-bullet.png" alt="">
+                Testimonial
+              </a>
+              <a class="active" href="news.html">
+                <img src="images/nav-bullet.png" alt="">
+                Latest News
+              </a>
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              This is the Official website of Projects For Change Africa.
+              Our Platform is designed to provide you with all the 
+              information,
+               tools, and resources you need to take your 
+               business to the next level.
+               Thanks for visiting, and we look 
+               forward to working with you on your 
+               journey to success.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Subscribe</h4>
+          <form id="subscribeForm" action="https://formspree.io/f/mrbzbjer" method="POST">
+              <input type="email" name="email" placeholder="Enter email" required />
+              <button type="submit">Subscribe</button>
+          </form>
+          <div id="subscribeResponse"></div>
+          
+        
+        
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            <h11>
+            &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+            <a href="https://html.design/">PFCAFRICA</a>
+            </h11></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>
