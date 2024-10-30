@@ -698,6 +698,22 @@
         </div>
       </div>
     </div>
+        <script>
+      document.getElementById("shareButton").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: 'Adjusting Pricing To Suit Economy',
+            text: 'Check out this article on PFCAfrica!',
+            url: window.location.href // Share the current page URL
+          })
+          .then(() => console.log('Successfully shared'))
+          .catch((error) => console.error('Error sharing', error));
+        } else {
+          alert('Sharing is not supported on this browser.');
+        }
+      });
+    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", async function() {
