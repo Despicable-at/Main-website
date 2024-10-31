@@ -287,27 +287,27 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="active" href="index.html">
+            <a class="active" href="/index">
               Home
             </a>
-            <a class="" href="about.html">
+            <a class="" href="/about">
               About
             </a>
-            <a class="" href="service.html">
+            <a class="" href="/service">
               Services
             </a>
-            <a class="" href="testimonial.html">
+            <a class="" href="/testimonial">
               Testimonial
             </a>
-            <a class="" href="news.html">
+            <a class="" href="/news">
               Latest News
             </a>
-            <a class="" href="contact.html">
+            <a class="" href="/contact">
               Contact Us
             </a>
           </div>
         </div>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/index">
           <span>
             PFCA
           </span>
