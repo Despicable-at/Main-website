@@ -285,29 +285,143 @@
   }
 </script>
 <script>
-  (function() {
-    var chatbot = document.createElement("iframe");
-    chatbot.src = "https://pfcafrica-chatbot.vercel.app";
-    chatbot.style.width = "350px";
-    chatbot.style.height = "500px";
-    chatbot.style.border = "none";
-    chatbot.style.position = "fixed";
-    chatbot.style.bottom = "20px";
-    chatbot.style.right = "20px";
-    chatbot.style.zIndex = "9999";
+document.addEventListener("DOMContentLoaded", function () {
+  // Create chatbot button
+  const chatButton = document.createElement("button");
+  chatButton.innerHTML = "💬";
+  chatButton.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  `;
+  document.body.appendChild(chatButton);
 
-    document.body.appendChild(chatbot);
-})();
+  // Create chat window
+  const chatWindow = document.createElement("div");
+  chatWindow.style.cssText = `
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  `;
+  document.body.appendChild(chatWindow);
+
+  // Create chat messages container
+  const messagesContainer = document.createElement("div");
+  messagesContainer.style.cssText = `
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+  `;
+  chatWindow.appendChild(messagesContainer);
+
+  // Initial bot message
+  const botMessage = document.createElement("div");
+  botMessage.textContent = "Hi! I'm PFC Africa's AI Assistant. How can I help?";
+  botMessage.style.cssText = `
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+  `;
+  messagesContainer.appendChild(botMessage);
+
+  // Create input field
+  const inputField = document.createElement("input");
+  inputField.setAttribute("type", "text");
+  inputField.placeholder = "Ask me anything...";
+  inputField.style.cssText = `
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+  `;
+  chatWindow.appendChild(inputField);
+
+  // Toggle chat window on button click
+  chatButton.addEventListener("click", function () {
+    chatWindow.style.display = chatWindow.style.display === "none" ? "flex" : "none";
+  });
+
+  // Handle message sending
+  inputField.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      const userText = inputField.value.trim();
+      if (userText === "") return;
+
+      // Display user message
+      const userMessage = document.createElement("div");
+      userMessage.textContent = userText;
+      userMessage.style.cssText = `
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        align-self: flex-end;
+        max-width: 80%;
+      `;
+      messagesContainer.appendChild(userMessage);
+      inputField.value = "";
+
+      // Send message to backend
+      fetch("https://main-website-ol98.onrender.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userText }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          const botReply = document.createElement("div");
+          botReply.textContent = data.reply || "Sorry, I couldn't process that.";
+          botReply.style.cssText = `
+            background: #eee;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+          `;
+          messagesContainer.appendChild(botReply);
+        })
+        .catch(() => {
+          const errorReply = document.createElement("div");
+          errorReply.textContent = "Error connecting to the server.";
+          errorReply.style.cssText = `
+            background: red;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+          `;
+          messagesContainer.appendChild(errorReply);
+        });
+    }
+  });
+});
 </script>
+
 
 
 </head>
 
 <body>
-  <iframe src="https://pfcafrica-chatbot.vercel.app" 
-        width="350" height="500" 
-        style="border: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-</iframe>
 
   <div class="hero_area">
     <!-- header section strats -->
