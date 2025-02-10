@@ -43,6 +43,9 @@
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
+  <script src="chatbot.js"></script>
+
+  
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -281,11 +284,31 @@
     ]
   }
 </script>
+<script>
+  (function() {
+    var chatbot = document.createElement("iframe");
+    chatbot.src = "https://pfcafrica-chatbot.vercel.app";
+    chatbot.style.width = "350px";
+    chatbot.style.height = "500px";
+    chatbot.style.border = "none";
+    chatbot.style.position = "fixed";
+    chatbot.style.bottom = "20px";
+    chatbot.style.right = "20px";
+    chatbot.style.zIndex = "9999";
+
+    document.body.appendChild(chatbot);
+})();
+</script>
 
 
 </head>
 
 <body>
+  <iframe src="https://pfcafrica-chatbot.vercel.app" 
+        width="350" height="500" 
+        style="border: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+</iframe>
+
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
