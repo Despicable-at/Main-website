@@ -5,7 +5,8 @@ import os
 from dotenv import load_dotenv # type: ignore
 
 app = Flask(__name__)
-CORS(app, resources={r"/chat": {"origins": "http://127.0.0.1:5000/chat"}})
+CORS(app)  # Allow all origins for testing
+
 
 load_dotenv()  # Load environment variables
 
