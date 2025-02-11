@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
       inputField.value = "";
 
       // Send message to backend
-      fetch("https://main-website-ol98.onrender.com", {
+      fetch("https://main-website-ol98.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userText }),
