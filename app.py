@@ -19,19 +19,14 @@ def chat():
         return jsonify({"reply": "Sorry, I didn't understand that."})
 
 try:
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are PFC Africa's AI Assistant."},
-            {"role": "user", "content": user_message}
-        ]
-    )
-    print(response)  # Debugging - Print the full response
-    reply = response["choices"][0]["message"]["content"]
-except Exception as e:
-    print("Error:", e)  # Print error for debugging
-    reply = "Sorry, I couldn't process that request."
-
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "system", "content": "You are PFC Africa's AI Assistant."},
+                      {"role": "user", "content": user_message}]
+        )
+        reply = response["choices"][0]["message"]["content"]
+    except Exception as e:
+        reply = "Sorry, I couldn't process that request."
 
     return jsonify({"reply": reply})
 
