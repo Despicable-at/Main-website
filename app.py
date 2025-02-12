@@ -25,10 +25,10 @@ try:
                       {"role": "user", "content": user_message}]
         )
         reply = response["choices"][0]["message"]["content"]
-    except Exception as e:
+except Exception as e:
         reply = "Sorry, I couldn't process that request."
 
-    return jsonify({"reply": reply})
+return jsonify({"reply": reply})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Default to 10000 or use Render's assigned port
