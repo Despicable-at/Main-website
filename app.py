@@ -9,7 +9,7 @@ CORS(app)  # Allow all origins for testing
 
 load_dotenv()  # Load environment variables
 
-openai.api_key = os.getenv("OPENAI_API_KEY")  # Securely get the key
+openai.api_key = os.getenv("OPENAI_API_KEY:", "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")  # Securely get the key
 
 @app.route("/chat", methods=["POST"])
 def chat():
