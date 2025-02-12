@@ -11,10 +11,11 @@ load_dotenv()  # Load environment variables
 
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Securely get the key
 
-@app.route("/chat", methods=["POST"])
+@app.route("/chat", methods=["GET", "POST"])
 def chat():
-    user_message = request.json.get("message")
-    
+    if request.method == "GET":
+        return jsonify({"message": "Use POST request to chat."})
+        
     if not user_message:
         return jsonify({"reply": "Sorry, I didn't understand that."})
 
